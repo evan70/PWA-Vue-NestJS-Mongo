@@ -47,22 +47,22 @@ export default defineComponent({
         {
           label: "Home",
           icon: "pi pi-fw pi-home",
-          to: "/home"
+          to: `/home`
         },
         {
           label: "About",
           icon: "pi pi-fw pi-info-circle",
-          to: "/about"
+          to: `/about`
         },
         {
           label: "Admin",
           icon: "pi pi-fw pi-cog",
-          to: "/admin",
+          to: `/admin`,
           // @ts-ignore
           visible: () => this.isLoggedIn && this.isAdmin
         },
         {
-          label: "User",
+          label: `User`,
           icon: "pi pi-fw pi-user",
           // @ts-ignore
           visible: () => this.isLoggedIn,
